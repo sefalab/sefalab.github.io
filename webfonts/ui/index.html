@@ -329,7 +329,8 @@
 				<br> <b>Size of dataset </b>720GB
 					
 				</p>
-             
+             <img src="static/images/img_2628A__0_10844.jpg" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+                
 				<p></p>
                 <div class="actions">
                   <a href="#" class="button md-close"></a>
@@ -339,13 +340,14 @@
           </div>
         </li>
 
+		
 		<li class="talk wow fadeInUp highlight" id="andreas-gal">
           <h5 class="time">Gallery</h5>
           <div class="subject" style="width: 100%;">
             <div class="description">
               <img src="static/images/speakers/vector.jpg" height="96" class="avatar" alt="">
               <h5>Looking at the data at hand</h5>
-              <h6>Satellite Images, Polygons and points of Neighbourhoods and the Building SPOT count data overlayed</h6>
+              <h6>_Satellite Images, Polygons and points of Neighbourhoods and the Building SPOT count data overlayed</h6>
               <span class="more">+</span>
               <div class="details">
 				<p style="padding-bottom: 16px;">Our study makes use of 4 datasets: satellite images, polygons of neighbourhoods, household income data and a shapefile dataset
@@ -374,6 +376,44 @@
 				<h5 style="text-align: left">Alex township with Enumeration Area polygons overlayed on satellite imagery overlayed with with the building data to show density</h5>
 				<img src="static/images/alex subplaces shapefile.PNG" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
                 <br><br>
+				
+                <br><br>
+				
+				<div class="actions">
+                  <a href="#" class="button md-close"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+		
+		<li class="talk wow fadeInUp highlight" id="andreas-gal">
+          <h5 class="time">Data Prepping </h5>
+          <div class="subject" style="width: 100%;">
+            <div class="description">
+              <img src="static/images/grid.JPG" height="96" class="avatar" alt="">
+              <h5>Data Cleaning and preprocessing</h5>
+              <h6>_</h6>
+              <span class="more">+</span>
+              <div class="details">
+             <p style="padding-bottom: 16px;">We are using 2011 Satellite Images, Gauteng Province 2011 Building SPOT Count, Gauteng Province 2011 Household Income Data and the Gauteng Province Enumeration Area Polygon Dataset to build our first model.</p>
+				
+				<h5 style="text-align: left"><u>Step 1: Reduce the image size</u></h5>
+				<p style="padding-bottom: 16px;">For better data handling, we subdivided the huge satellite images from each 21 688 x 21 688 pixels to 64 2711 x 2711 pixels images.</p>
+				<br> <b>Gauteng data: </b> From 20 images covering the entire province, we derived 1280 smaller images of 2711 x 2711 pixels. 
+				<h5 style="text-align: left">Subdividing the images using an 8 x 8 grid</h5>
+				<img src="static/images/grid_conv.jpg" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+                <br><br>
+				
+				<h5 style="text-align: left"><u>Step 2: Label the EA polygon data into 7 classes of neighbourhoods </u></h5>
+				<p style="padding-bottom: 16px;">We handlabelled all the EAs of Gauteng Province into the classes in the table below.</p>
+				
+				<h5 style="text-align: left">Neighbourhood Labels</h5>
+				<img src="static/images/Labels table.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+                <br><br>
+				
+				
+				
 				
                 <br><br>
 				
