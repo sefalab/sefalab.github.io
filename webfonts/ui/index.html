@@ -465,26 +465,19 @@
 				<h5 style="text-align: left"><u>Step 1: Reduce the image size</u></h5>
 				<br><br>
 				
-				<h5 style="text-align: left"><u>Step 2: Label the EA polygon data into 13 classes of neighbourhoods </u></h5>
-				<p style="padding-bottom: 16px;">We labelled all the EAs of Gauteng Province into 13 classes.</p>
+				<h5 style="text-align: left"><u>Step 2: Label the EA polygon data into 12 classes of neighbourhoods </u></h5>
+				<p style="padding-bottom: 16px;">We labelled all the EAs of Gauteng Province into 12 classes.</p>
+				<p style="padding-bottom: 16px;"> Township, Suburb, Commercial, Farms, Informal_settlement, Industrial,Parks_and_recreation, Smallholdings, Traditional_residential, Collective_living_quarters, Vacant, Other</p>
 				
 				<br><br>
 				
 				<h5 style="text-align: left"><u>Step 3: Label the neighbourhoods </u></h5>
 				<p style="padding-bottom: 16px;">Overlay the polygons on the satellite images then create labels</p>
 				
-				<h5 style="text-align: left">Labelled Neighbourhood (All 12 classes)</h5>
+				<h5 style="text-align: left">Labelled Neighbourhood (Not all classes)</h5>
 				<img src="static/images/townships.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
                 <br><br>
-				
-				<h5 style="text-align: left"><u>Step 4: Inputs and Labels </u></h5>
-				<p style="padding-bottom: 16px;">Inputs and labels which will go into our model</p>
-				
-				<h5 style="text-align: left">Image and labels</h5>
-				<img src="static/images/xny.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
-				
-				
-                <br><br>
+
 				
 				<div class="actions">
                   <a href="#" class="button md-close"></a>
@@ -493,6 +486,38 @@
             </div>
           </div>
         </li>
+		
+		<li class="talk wow fadeInUp odd" id="juan-ignacio-dopazo">
+          <div class="subject" style="width: 100%;">
+            <div class="description">
+              <img src="static/images/speakers/spot.jpg" height="96" class="avatar" alt="">
+              <h5>Models Built</h5>
+              <h6>_</h6>
+              <span class="more">+</span>
+              <div class="details" style="text-align: left;">
+                
+					
+				</p>
+				<h5 style="text-align: left;margin-top:2em;margin-bottom:0px">Our data example</h5>
+				<img src="static/images/sat.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+				<br><br>
+				<h5 style="text-align: left"><u>Step 1: Reduce the image size</u></h5>
+				<p style="padding-bottom: 16px;">For better data handling, we subdivided the huge satellite images from each 21 688 x 21 688 pixels to 64 2711 x 2711 pixels images.
+				<br><br> <b>Gauteng data: </b> From 20 images covering the entire province, we derived 1280 smaller images of 2711 x 2711 pixels.</p> 
+				<h5 style="text-align: left">Subdividing the images using an 8 x 8 grid</h5>
+				<img src="static/images/grid_conv.jpg" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+                <br><br>
+				<h5 style="text-align: left">We reduced the images further to 256x 256</h5>
+				<img src="static/images/img_2528C__16266_8133___1536_1280.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+                <br><br>
+                <div class="actions">
+                  <a href="#" class="button md-close"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+		
 
         <li class="break wow fadeInUp">
           <h5 class="time"></h5>
