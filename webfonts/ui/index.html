@@ -492,14 +492,14 @@
             <div class="description">
               <img src="static/images/u-net-architecture.png" height="96" class="avatar" alt="">
               <h5>Models Built</h5>
-              <h6>_</h6>
+              <h6>_55% Acuracy; Problem- class imbalance</h6>
               <span class="more">+</span>
               <div class="details" style="text-align: left;">
                 <h6><a href="#" target="_blank"></a>The model: Semantic segmentation over 12 classes</h6>
                 <br>
 				<h5 style="text-align: left"><u>Unet: Slightly modified original Unet architecture </u></h5>
-				<p style="padding-bottom: 16px;">Data was sampled from 1 province(Gauteng). Farms cause a huge class imbalance; they span over huge amounts of land.  </p>
-				<h5 style="text-align: left"><u>What to try next: Over and under sampling; Merge classes (vacant/open land and farms, etc.); Build a low res regional map of the larger area as a feature</u></h5>
+				<p style="padding-bottom: 16px;">Data was sampled from 1 province(Gauteng). Farms cause a huge class imbalance; they span over huge amounts of land. </p>
+				<h5 style="text-align: left"><u>What to try next: Improve labels; Over and under sampling; Merge classes (vacant/open land and farms, etc.); Build a low res regional map of the larger area as a feature</u></h5>
 				<p style="padding-bottom: 16px;"> Accuracy : 55% </p>
 				<p style="padding-bottom: 16px;">Cohen's Kappa : 0.325</p>
 				
@@ -509,9 +509,11 @@
 				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Number of pixels per class</h5>
 				<img src="static/images/pixels.png" style="width: 50%;height: auto; margin-bottom:1em" alt=":(" />
 				<br><br>
-				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Confusion matrix</h5>
+				<p style="padding-bottom: 9px;">Observation: Unbalaced dataset; undersampled pixels in other classes, model learns pixels of farms really well hence the high accuracy.</p>
+				<h5 style="text-align: left;margin-top:0.5em;margin-bottom:0px">Confusion matrix</h5>
 				<img src="static/images/mat_farm imbalance.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
 				<br><br>
+				<p style="padding-bottom: 16px;">Observation: The model confuses the labels from the classes Farm and Vacant land a lot. Looking at the images below from the test set- We can sort of see why it is easy to confuse them given the fact that they often look similar(especially on land that has not been farmed in a while). We will perhaps consider merging these two classes in the next iteration.</p>
 				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Test data</h5>
 				<img src="static/images/model_1_mat_1.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
 				<img src="static/images/model_1_mat_2.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
@@ -524,7 +526,40 @@
             </div>
           </div>
         </li>
-		
+		<li class="talk wow fadeInUp odd" id="juan-ignacio-dopazo">
+          <div class="subject" style="width: 100%;">
+            <div class="description">
+              <img src="static/images/u-net-architecture.png" height="96" class="avatar" alt="">
+              <h5>Models Built</h5>
+              <h6>_x% Acuracy; Problem- ____</h6>
+              <span class="more">+</span>
+              <div class="details" style="text-align: left;">
+                <h6><a href="#" target="_blank"></a>The model: Semantic segmentation over 11 classes.We have merged the Farm class with Vacnt land class</h6>
+                <br>
+				<h5 style="text-align: left"><u>Unet: Slightly modified original Unet architecture </u></h5>
+				<p style="padding-bottom: 16px;">Data was sampled from Gauteng province only. We spatially joined the cadastral dataset with the EA dataset to crop just the houses in the neighbourhoods. So they look like the image below</p>
+				<img src="static/images/model_2_house_data.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+				<h5 style="text-align: left"><u>What to try next: Improve labels; Over and under sampling; Merge classes (vacant/open land and farms, etc.); Build a low res regional map of the larger area as a feature</u></h5>
+				<p style="padding-bottom: 16px;"> Accuracy : x% </p>
+				<p style="padding-bottom: 16px;">Cohen's Kappa : x</p>
+				
+				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Number of pixels per class</h5>
+				<img src="static/images/xny.png" style="width: 50%;height: auto; margin-bottom:1em" alt=":(" />
+				<br><br>
+				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Confusion matrix</h5>
+				<img src="static/images/xny.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+				<br><br>
+				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Test data</h5>
+				<img src="static/images/xny.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+				<br><br>
+				
+                <div class="actions">
+                  <a href="#" class="button md-close"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
 
         <li class="break wow fadeInUp">
           <h5 class="time"></h5>
