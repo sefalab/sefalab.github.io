@@ -490,26 +490,33 @@
 		<li class="talk wow fadeInUp odd" id="juan-ignacio-dopazo">
           <div class="subject" style="width: 100%;">
             <div class="description">
-              <img src="static/images/speakers/spot.jpg" height="96" class="avatar" alt="">
+              <img src="static/images/u-net-architecture.png" height="96" class="avatar" alt="">
               <h5>Models Built</h5>
               <h6>_</h6>
               <span class="more">+</span>
               <div class="details" style="text-align: left;">
-                
-					
-				</p>
-				<h5 style="text-align: left;margin-top:2em;margin-bottom:0px">Our data example</h5>
-				<img src="static/images/sat.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+                <h6><a href="#" target="_blank"></a>The model: Semantic segmentation over 12 classes</h6>
+                <br>
+				<h5 style="text-align: left"><u>Unet: Slightly modified original Unet architecture </u></h5>
+				<p style="padding-bottom: 16px;">Data was sampled from 1 province(Gauteng). Farms cause a huge class imbalance; they span over huge amounts of land.  </p>
+				<h5 style="text-align: left"><u>What to try next: Over and under sampling; Merge classes (vacant/open land and farms, etc.); Build a low res regional map of the larger area as a feature</u></h5>
+				<p style="padding-bottom: 16px;"> Accuracy : 55% </p>
+				<p style="padding-bottom: 16px;">Cohen's Kappa : 0.325</p>
+				
+				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Ref: Cohen's kappa</h5>
+				<img src="static/images/pixels.png" style="width: 50%;height: auto; margin-bottom:1em" alt=":(" />
+				
+				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Number of pixels per class</h5>
+				<img src="static/images/pixels.png" style="width: 50%;height: auto; margin-bottom:1em" alt=":(" />
 				<br><br>
-				<h5 style="text-align: left"><u>Step 1: Reduce the image size</u></h5>
-				<p style="padding-bottom: 16px;">For better data handling, we subdivided the huge satellite images from each 21 688 x 21 688 pixels to 64 2711 x 2711 pixels images.
-				<br><br> <b>Gauteng data: </b> From 20 images covering the entire province, we derived 1280 smaller images of 2711 x 2711 pixels.</p> 
-				<h5 style="text-align: left">Subdividing the images using an 8 x 8 grid</h5>
-				<img src="static/images/grid_conv.jpg" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
-                <br><br>
-				<h5 style="text-align: left">We reduced the images further to 256x 256</h5>
-				<img src="static/images/img_2528C__16266_8133___1536_1280.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
-                <br><br>
+				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Confusion matrix</h5>
+				<img src="static/images/mat_farm imbalance.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+				<br><br>
+				<h5 style="text-align: left;margin-top:1em;margin-bottom:0px">Test data</h5>
+				<img src="static/images/model_1_mat_1.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+				<img src="static/images/model_1_mat_2.png" style="width: 100%;height: auto; margin-bottom:1em" alt=":(" />
+				<br><br>
+				
                 <div class="actions">
                   <a href="#" class="button md-close"></a>
                 </div>
