@@ -111,7 +111,7 @@ body a:focus {
 .sidenav:before {
 	position: absolute;
 	content: '';
-	background: rgba(0, 154, 192, 0.52);
+	background: rgb(182 200 205 / 52%);
 	width: 100%;
 	height: 100%;
 	left: 0;
@@ -600,7 +600,7 @@ ul.social-icons3 li a:hover {
 
 .btn-info {
 	color: #fff;
-	background-color: #673AB7 !important;
+	background-color: #161616 !important;
 	border-color: #673AB7 !important;
 	color: #fff !important;
 }
